@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 
-export class MessageRepository {
+export class MessagesRepository {
   async findOne(id: string): Promise<string | undefined> {
     try {
       const contents = await fs.readFile('messages.json', 'utf-8'); // Use 'utf-8' corretamente
